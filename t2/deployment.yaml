@@ -2,6 +2,10 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: podinfo
+  labels:
+    app.kubernetes.io/name: podinfo
+  annotations:
+    app.kubernetes.io/name: podinfo
 spec:
   minReadySeconds: 3
   revisionHistoryLimit: 5
