@@ -5,9 +5,9 @@ metadata:
   namespace: standard-test
 spec:
   interval: 1m
-  url: https://github.com/stefanprodan/podinfo
+  url: https://github.com/wsdnv/tmp-45gh84
   ref:
-    branch: master
+    branch: main
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
@@ -20,6 +20,6 @@ spec:
   sourceRef:
     kind: GitRepository
     name: podinfo
-  path: "./kustomize"
+  path: "t2"
   prune: true
   timeout: 1m
