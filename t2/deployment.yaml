@@ -22,8 +22,10 @@ spec:
       annotations:
         prometheus.io/scrape: "true"
         prometheus.io/port: "9797"
+        app.kubernetes.io/name: podinfo
       labels:
         app: podinfo
+        app.kubernetes.io/name: podinfo
     spec:
       containers:
       - name: podinfod
