@@ -15,6 +15,7 @@ metadata:
   name: podinfo
   namespace: standard-test
 spec:
+  serviceAccountName: tenant2-flux-sa
   interval: 10m
   targetNamespace: standard-test
   sourceRef:
